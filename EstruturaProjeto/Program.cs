@@ -1,8 +1,171 @@
 ﻿using EstruturaProjeto.Models;
 
-int a = Convert.ToInt32("5"); // cast - Casting de valor string para int
+string opcao;
+bool exibirMenu = true;
 
-Console.WriteLine(a);
+while(exibirMenu) 
+{
+    Console.WriteLine("Digite a sua opção");
+    Console.WriteLine("1 - Cadastrar cliente");
+    Console.WriteLine("2 - Buscar cliente");
+    Console.WriteLine("3 - Apagar cliente");
+    Console.WriteLine("4 - Encerrar");
+
+    opcao = Console.ReadLine();
+
+    switch(opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+
+        case "2":
+            Console.WriteLine("Busca de cliente");
+            break;
+        
+        case "3":
+            Console.WriteLine("Apagar cliente");
+            break;
+        
+        case "4":
+            Console.WriteLine("Encerrar");
+            exibirMenu = false;
+            // Enviroment.Exit(0);
+            break;
+        
+        default:
+            Console.WriteLine("Opção inválida");
+            break;
+    }
+
+}
+
+/*
+do {
+    comandos...
+} while (condição de parada);
+
+*/
+
+
+/* 
+
+while (condicao de parada) 
+{
+    Comandos ....
+}
+
+break;
+
+
+*/
+
+
+/* 
+for (condicao inicial; condicao de parada; mudanca) 
+{
+    comando 1
+    comando 2
+    .....
+}
+
+
+*/ 
+
+
+
+// Calculadora calculadora = new Calculadora();
+
+// int x = Console.Read();
+// int y = Console.Read();
+
+// calculadora.Somar(9 , 3);
+// calculadora.Subtrair(9 , 3);
+// calculadora.Multiplicar(9 , 3);
+// calculadora.Dividir(9 , 3);
+// calculadora.Potencia(9 , 2);
+// calculadora.Seno(30);
+// calculadora.Cosseno(30);
+// calculadora.Tangente(30);
+// calculadora.RaizQuadrada(16);
+
+// NOT (!)
+// AND (&&)
+// OR (Pipe, ||)
+
+
+// Console.ReadLine();
+
+/* 
+    switch(variavel) 
+    {
+        case condicao:
+            .....
+            break
+
+        default:
+            ....
+            break;
+    }
+
+
+*/
+
+
+/* 
+if (condição) {
+    comando 1
+} if else () {
+    comando 2
+}
+*/
+
+
+/* 
+if (condição) {
+    comando 1
+} else {
+    comando 2
+}
+*/
+
+//string a = "15";
+
+// int b = 0;
+
+//int.TryParse(a, out int b);
+
+//Console.WriteLine(b);
+// Console.WriteLine("Conversão realizada com sucesso!");
+
+// double a = 4 / (2 + 2);
+
+// Console.WriteLine(a);
+
+
+// int a = 5;
+// double b = a; // casting implicito, onde int é transformado para double
+
+// long a = long.MaxValue;
+// int b = Convert.ToInt32(a);
+
+// int a = int.MaxValue;
+// long b = a;
+
+// Console.WriteLine(b);
+
+// int inteiro = 5;
+// string a = inteiro.ToString();
+// converte para string é so utilizar ToString(), pois esta presente em todos os tipos
+
+// Console.WriteLine(a);
+
+// int a = Convert.ToInt32(null); // cast - Casting de valor string para int
+// int a = int.Parse(null); // Equivalente ao casting para inteiro
+
+// Convert tem tratamento para null values, é preferivel utiliza-lo para casting
+
+// Console.WriteLine(a);
 
 // int a = 10;
 // int b = 20;
