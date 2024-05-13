@@ -1,5 +1,65 @@
 ﻿using EstruturaProjeto.Models;
 
+// forma diferente de declarar array
+/*
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+*/
+
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Add("SC");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Remove("MG");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// for(int contador = 0; contador < listaString.Count; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} - {listaString[contador]}");
+// }
+
+// int contadorForEach = 0;
+// foreach ( string item in listaString) 
+// {
+//     Console.WriteLine($"Posição N° {contadorForEach} - {item}");
+//     contadorForEach++;
+// }
+
+
+// // forma nova de declarar um array abaixo
+// int[] arrayInteiros = [72, 64, 50];
+
+// int[] arrayInteirosDobrado =  new int[arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+
+// // arrayInteiros[3];
+// for (int contador = 0; contador<arrayInteiros.Length; contador++) 
+// {
+//     Console.WriteLine($"Posição n° {contador} - {arrayInteiros[contador]}");
+// }
+
+// // percorrendo array com o FOREACH
+// foreach(int valor in arrayInteiros)
+// {
+//     Console.WriteLine(valor);
+// } 
+
+/*
 string opcao;
 bool exibirMenu = true;
 
@@ -38,7 +98,7 @@ while(exibirMenu)
             break;
     }
 
-}
+}*/
 
 /*
 do {
