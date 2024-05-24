@@ -16,6 +16,12 @@ namespace ExemploExplorando.models
             Sobrenome = sobrenome;
         }
 
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         private string _nome; // body expressions, simplificação quando há somente uma linha de código
         private int _idade;
         public string Nome 
